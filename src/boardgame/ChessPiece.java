@@ -10,6 +10,9 @@ public class ChessPiece extends Piece{
         this.color = color;
     }
 
+    public ChessPiece(Board board, Color color) {
+    }
+
     public Color getColor() {
         return color;
     }
