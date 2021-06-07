@@ -44,9 +44,12 @@ public class ChessMatch {
     }
 
 
-    private void validadeSourcePosition(Position position){
-        if(!board.thereIsAPiece(position)){
+    private void validadeSourcePosition(Position position) {
+        if (!board.thereIsAPiece(position)) {
             throw new ChessException("Não contem nenhuma peça nesta posição");
+        }
+        if (!board.piece(position).isTheranyPossibleMove()){
+            throw new ChessException("a peça escolhida nao tem npossibilidade de movimentos");
         }
     }
 

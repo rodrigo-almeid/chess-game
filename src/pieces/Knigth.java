@@ -14,4 +14,9 @@ public class Knigth extends ChessPiece {
     public String toString (){
         return "P";
     }
+
+    @Override
+    public boolean[][] possiblemoves() {
+        return new boolean[0][];
+    }
 }

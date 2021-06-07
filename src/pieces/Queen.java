@@ -13,4 +13,8 @@ public class Queen extends ChessPiece {
     public String toString (){
         return "Q";
     }
+    @Override
+    public boolean[][] possiblemoves() {
+        return new boolean[0][];
+    }
 }
