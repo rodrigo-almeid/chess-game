@@ -1,9 +1,8 @@
 package pieces;
 
 import boardgame.Board;
-import boardgame.ChessPiece;
+import chess.ChessPiece;
 import chess.Color;
-import lombok.*;
 
 public class Pawn extends ChessPiece {
 
