@@ -15,8 +15,11 @@ public class Knigth extends ChessPiece {
         return "P";
     }
 
-    @Override
     public boolean[][] possiblemoves() {
-        return new boolean[0][];
+        int r = 1;
+        int c = 0;
+        boolean[][] mat = new boolean[getBoard().getRows()][getBoard().getColumns()];
+        mat[position.getRow() + r][(position.getColumn())+ c] = true;
+        return mat;
     }
 }
